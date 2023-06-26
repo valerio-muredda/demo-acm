@@ -2,7 +2,7 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: preallocated-test
-provisioner: 
+provisioner: 	ebs.csi.aws.com
 parameters:
   StoragePolicyName: openshift-thick-storage-policy
 reclaimPolicy: Delete
